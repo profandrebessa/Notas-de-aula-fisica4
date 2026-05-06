@@ -177,3 +177,104 @@ width: 350px
 name: fig_espelhoesfericoconvexo
 ---
 :::
+
+- **Exercício:**  Um  objeto de 2,0 cm de altura está a 10,0 cm de um espelho convexo cujo raio de curvatura é 10 cm. (a) Localize a imagem e (b) encontre a altura da imagem.
+
+:::{figure} ./figures/espelhoesfericoconvexo2.png
+---
+width: 500px
+name: fig_espelhoesfericoconvexo2
+---
+:::
+
+## Refração através de superfície esférica
+
+Agora, os raios irão incidir e refratar através da superfície esférica. O resultado será uma combinação da geometria e da refração ao mudar de meio.
+
+A geometria do problema está ilustrada na figura:
+:::{figure} ./figures/refracaoesfera1.png
+---
+width: 600px
+name: fig_refracaoesfera1
+---
+:::
+
+As convenções que utilizaremos são:
+1) $s>0$ se o objeto está do mesmo lado que a luz incidente.
+2) $s'>0$ se a imagem está do lado refratado.
+3) $r>0$ se $C$ está do lado da luz refratada. 
+
+Vamos usar a Lei de Snell:
+```{math}
+n_1\,\sin \theta_1 = n_2\,\sin\theta_2
+\label{eq:leidesnell2}
+```
+na apromação axial em que $\sin\theta\approx \theta$. Obteremos:
+```{math}
+n_1\,\theta_1 = n_2\,\theta_2
+\label{eq:leidesnellparaxial}
+```
+
+Os triângulos relevantes são: $ACP'$ e $PAC$. Obtém-se: $\beta = \theta_2 + \gamma$ e $\theta_1 = \alpha + \beta$. Juntando as equações, obtemos:
+```{math}
+n_1\,\alpha + n_2\,\gamma = (n_2-n_1)\beta\;.
+\label{eq:esferarefratoraaux1}
+```
+Usando que $\alpha\approx \ell/s$, $\gamma \approx \ell/s'$ e $\beta\approx \ell/r$, chegamos à equação::
+```{math}
+\frac{n_1}{s}+ \frac{n_2}{s'}= \frac{(n_2-n_1)}{r}\;.
+\label{eq:equacaoesferarefratora}
+```
+
+A magnificação é dada pela relação:
+```{math}
+\frac{y'}{y}\;=\;\frac{-n_1 s'}{n_2\,s}\;.
+\label{eq:magnificacaorefratora}
+```
+:::{figure} ./figures/refracaoesfera2.png
+---
+width: 400px
+name: fig_refracaoesfera2
+---
+:::
+
+**Exercício:** Um peixe está em um aquário de borda esférica, com raio de 15,0 cm. Um peixe observa o peixe de modo que seu nariz está a 10,0 cm da superfície do aquário. A luz refletida pelo nariz do gato se refrata através da superfície ar-água e forma uma umagem vista pelo peixe. Encontre: (a) a distância imagem e (b) a magnificação da imagem do nariz do gato. Despreze qualquer efeito óptico do vidro do aquário. Use $n_{agua} = 1,33$.
+:::{figure} ./figures/refracaogatopeixe.png
+---
+width: 500px
+name: fig_refracaogatopeixe
+---
+:::
+
+Com as convenções adotadas, as equações desta seção se aplicam a superfícies refratoras côncavas ($R< 0$) e para quaisquer sinais de $s$ e $s'$. Em particular, podemos tomar o limite $r\rightarrow \infty$, que corresponde a considerar a superfície plana. Teremos:
+```{math}
+s'\;=\;\frac{-n_2 s}{n_1}\;.
+\label{eq:magnificacaorefratoraRinfty}
+```
+
+## Lentes finas
+
+Vamos modelar as lentes como um meio com índice de rafração $n$. A luz incidirá a partir do ar, sofrerá difração ao entrar na lente e ao voltar para o ar. Para simplificar, vamos admitir que cada metade da lente é formada por uma calota esférica ou por uma superfície plana. Os raios de curvatura usados podem ser diferentes, e serão denotados por $r_1$ e $r_2$. A formação final da imagem envolve a aplicação dupla de expressões conhecidas.
+
+Para ilustrar, vamos considerar uma lente biconvexa:
+:::{figure} ./figures/lentes1.png
+---
+width: 700px
+name: fig_lentes1
+---
+:::
+
+A imagem do ponto $P$ para a superfície refratora convexa será virtual e vale a relação:
+```{math}
+\frac{n_{ar}}{s}+ \frac{n}{s_1'}= \frac{(n-n_{ar})}{r_1}\;.
+\label{eq:equacaolenteaux1}
+```
+A luz refratada através da primeira superfície atinge a segunda, que é uma superfície refratora côncava ($r_2<0$). Tudo se passa como se o raio viesse do ponto $P_1'$, à esquerda de $P$ (na posição $s_1'<0$).  Portanto, podemos considerar esse ponto como objeto para a segunda superfície refratora. Considerando que a maior espessura da lente é menor que as dimensões envolvidas, a distância objeto para a segunda refração é $s_2 = -s_1$. Teremos:
+```{math}
+\frac{n}{-s_{1'}} + \frac{n_{ar}}{s'}= \frac{{n_{ar}-n}}{r_2}\;.
+\label{eq:equacaolenteaux2}
+```
+Eliminando o parâmetro intermediário $s_1'$, obtemos:
+$$
+\frac{1}{s}+ \frac{1}{s'}= \left(\frac{n}{n_{ar}}-1\right)\left(\frac{1}{r_1}-\frac{1}{r_2}\right)
+$$

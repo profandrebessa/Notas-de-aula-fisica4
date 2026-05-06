@@ -1,14 +1,9 @@
 version: 1
 project:
   id: 88b5564e-b433-423c-8587-2af19a1a6f49
-  title: Guia de estudos de óptica
+  title: Notas de aula de Física IV
   toc:
-    - file: intro.md
-    - title: Propriedades da luz
-      children:
-        - file: refletividade.md
-        - file: dispersao.md
-        - file: opticageometrica.md
+    - file: opticageometrica.md
 site:
   template: book-theme
   base_url: /notas-de-aula-fisica4
