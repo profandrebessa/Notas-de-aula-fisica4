@@ -11,3 +11,5 @@ project:
         - file: opticageometrica.md
 site:
   template: book-theme
+  base_url: /novo-nome-do-repositorio
+
