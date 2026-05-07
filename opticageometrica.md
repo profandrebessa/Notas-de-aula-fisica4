@@ -1,6 +1,10 @@
 
 # Óptica geométrica
 
+As figuras destas notas de aula são quase todas extraídas do livro: "Física para Cientistas e Engenheiros - Volume 3: Física Moderna", de Paul A. Tipler e Gene Mosca, que é uma referência bastante recomendada pelo professor. A notação utilizada também é a mesma desta referẽncia.
+
+A discussão procura ser particularizada para o interesse de um curso de Licencitura. Uma referência auxiliar importante é o livro "Curso de Física Básica, Volume 4" de H. Moysés Nussenzveig.
+
 Nesta seção iremos estudar espelhos e superfícies refratoras. Para os espelhos vamos utilizar simplesmente que o ângulo de reflexão é igual ao ângulo de incidência. Para as superfícies refratoras, vamos usar a Lei de Snell:
 ```{math}
 n_1\,\sin \theta_1 = n_2\,\sin\theta_2
@@ -15,7 +19,7 @@ As propriedades da formação das imagens dos espelhos dependem de relações ge
 
 Considere uma fonte luminosa pontual. Nas figuras, essa fonte será denotada pela letra $P$. Raios são emitidos em todas as direções e serão refletidos no espelho. É importante compreender que a reflexão será tal que todos os raios refletidos parecerão ser emitidos de um mesmo ponto $P'$, localizado atrás do espelho. Como não chegam (e, portanto, não emanam) raios em $P'$, essa convergência do prolongamento dos raios não pode ser captada por um anteparo atrás do espelho. Dizemos que a imagem é virtual.
 
-A demonstração de que todos os raios refletidos parecem ser emitidos de $P'$ é simples. Considere um raio qualquer que atinge o espelho formando um ângulo $\theta$ com a normal. Além disso, considere um raio que atinge o espelho em ângulo zero. Os prolongamentos dos dois raios se encontram em um ponto $P'$. A questão é esse ponto $P'$ depende de $\theta$? 
+A demonstração de que todos os raios refletidos parecem ser emitidos de $P'$ é simples. Considere um raio qualquer que atinge o espelho formando um ângulo $\theta$ com a normal. Além disso, considere um raio que atinge o espelho em ângulo zero. Os prolongamentos dos dois raios se encontram em um ponto $P'$. A questão é: esse ponto $P'$ depende de $\theta$? 
 
 :::{figure} ./figures/espelhoplano1.png
 ---
@@ -37,14 +41,17 @@ name: fig_espelhoplano2
 ---
 :::
 
-#### Múltiplos espelhos. 
-
+#### Múltiplos espelhos planos
+Quando há N espelhos planos próximos, é possível que um observador perceba mais de N imagens a partir de uma única fonte pontual. Isso acontece por conta das múltiplas reflexões, como sugere a imagem abaixo:
 :::{figure} ./figures/multiplosespelhos.png
 ---
 width: 300px
 name: fig_multiplosespelhos
 ---
 :::
+Perceba que um observador na posição indicada pelo olho recebe os raios de $P_1'$ e $P_2'$ obtidos pelo prolongamento dos raios refletidos uma vez no espelho 1 e no espelho 2, respectivamente. Mas, o observador vê também uma imagem obtida pelo prolongamento de raios que refletiram uma vez no espelho 1 e, em seguida, refletiram novamente no espelho 2. Esses raios parecem ter sido emitidos da posição $P_{12}'$. 
+
+A quantidade de iamgens vai depender da quantidade de espelhos, de suas posições e da posição do observador. 
 
 #### Exercício
 
@@ -290,7 +297,9 @@ name: fig_refracaoesfera2
 ---
 :::
 
-**Exercício:** Um peixe está em um aquário de borda esférica, com raio de 15,0 cm. Um peixe observa o peixe de modo que seu nariz está a 10,0 cm da superfície do aquário. A luz refletida pelo nariz do gato se refrata através da superfície ar-água e forma uma umagem vista pelo peixe. Encontre: (a) a distância imagem e (b) a magnificação da imagem do nariz do gato. Despreze qualquer efeito óptico do vidro do aquário. Use $n_{agua} = 1,33$.
+#### Exercício
+ 
+ Um peixe está em um aquário de borda esférica, com raio de 15,0 cm. Um gato observa o peixe de modo que seu nariz está a 10,0 cm da superfície do aquário. A luz refletida pelo nariz do gato se refrata através da superfície ar-água e forma uma umagem vista pelo peixe. Encontre: (a) a distância imagem e (b) a magnificação da imagem do nariz do gato. Despreze qualquer efeito óptico do vidro do aquário. Use $n_{agua} = 1,33$.
 :::{figure} ./figures/refracaogatopeixe.png
 ---
 width: 500px
