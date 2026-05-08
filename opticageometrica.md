@@ -181,6 +181,7 @@ Para encontrar a imagem formada, trace os seguintes raios:
 width: 400px
 name: fig_espelhoesfericocomportamentoimagem1
 ---
+Exemplo de traçado de raios principais.
 :::
 
 :::{figure} ./figures/espelhoesfericocomportamentoimagem3.png
@@ -188,6 +189,7 @@ name: fig_espelhoesfericocomportamentoimagem1
 width: 350px
 name: fig_espelhoesfericocomportamentoimagem3
 ---
+Traçado de raios principais: outra situação.
 :::
 
 #### Exercício
@@ -211,7 +213,7 @@ As equações [](#eq:espelhoesferico2) e [](#eq:espelhoesferico3) são válidas 
 
 Observe que as relações continuam válidas para espelho convexos, desde que consideremos $r<0$ e $f<0$. 
 
-### Aumento (magnificação) lateral
+#### Aumento (magnificação) lateral
 
 O aumento lateral do espelho é a razão $y'/y$. Ele dá a razão entre o tamanho da imagem e o tamanho do objeto.
 
@@ -230,6 +232,16 @@ A figura acima exibe dois raios notáveis que tornam muito direta a demonstraç�
 O sinal $-$ foi colocado à mão para indicar que, nesta configuração específica, a imagem é invertida. Assim, além do fator de amplificação, a razão $y'/y" dá a orientação da imagem em relação ao objeto: sinal positivo, mesma orientação; sinal negativo: orientação invertida. 
 
 A magnificação lateral relaciona a variação das dimensões perpendiculares ao eixo do espelho. Já para um objeto fino colocado no eixo do espelho, cada parte do objeto estará a uma distância $s$ diferente do vértice, de modo que a situação final da imagem dependerá da geometria do problema.
+
+#### Comportamento da imagem
+
+Conforme dito no início, a imagem formada por um espelho côncavo muda suas características a depender da distância $s$ ao vértice. Estamos em condições de compreender todos os casos possíveis.
+
+- Objeto à esquerda de C ($s>r$): a imagem é real, invertida e menor, como na [](fig_espelhoesfericocomportamentoimagem1)
+- Objeto no centro de curvatura ($s=r$): a imagem é real, invertida e de mesmo tamanho.
+- Objeto entre C e o foco ($r> s> f$): a imagem é real, invertida e maior.
+- Objeto no foco ($s = f$): a imagem se forma no infinito (raios saem paralelamente ao eixo).
+- Objeto entre o foco e o vértice ($f > s$): a imagem é virtual, direita e maior, como na [](fig_espelhoesfericocomportamentoimagem3).
 
 ### Espelho convexo
 

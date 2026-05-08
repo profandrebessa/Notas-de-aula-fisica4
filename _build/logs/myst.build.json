@@ -5,7 +5,7 @@
     ],
     "opts": {
       "execute": false,
-      "executeParallel": 7,
+      "executeParallel": 3,
       "pdf": false,
       "tex": false,
       "typst": false,
