@@ -184,12 +184,20 @@ name: fig_espelhoesfericocomportamentoimagem1
 Exemplo de traçado de raios principais.
 :::
 
+:::{figure} ./figures/esfericoentreCeF.png
+---
+width: 350px
+name: fig_esfericoentreCeF
+---
+Traçado de raios principais: segunda situação.
+:::
+
 :::{figure} ./figures/espelhoesfericocomportamentoimagem3.png
 ---
 width: 350px
 name: fig_espelhoesfericocomportamentoimagem3
 ---
-Traçado de raios principais: outra situação.
+Traçado de raios principais: terceira situação.
 :::
 
 #### Exercício
