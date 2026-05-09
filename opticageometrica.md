@@ -329,39 +329,40 @@ A imagem se forma no infinito $(s' \rightarrow \infty)$ quando o objeto está lo
 \begin{equation}\label{eq:equacaoesferarefratorafocoobjeto}
 \frac{n_1}{f}= \frac{(n_2-n_1)}{r}\;.
 \end{equation}
-Portanto, diferentemente do caso do espelho esférico, temos dois planos focais e duas distâncias focais diferentes. O sinal de $f$ e $f'$ é o mesmo e depende da natureza das superfícies (côncava ou convexa) e de se a luz passa para um meio mais refringente ($f,f' >0$, imagem real) ou menos refringente ($f,f'<0$, imagem virtual.)
+Portanto, diferentemente do caso do espelho esférico, temos dois planos focais e duas distâncias focais diferentes. O sinal de $f$ e $f'$ é o mesmo e depende da natureza das superfícies (côncava ou convexa) e de se a luz passa para um meio mais refringente ($f,f' >0$, imagem real) ou menos refringente ($f,f'<0$, imagem virtual e objeto virtual.)
 :::{figure} ./figures/refracaofocosconvexoAB.png
 ---
 width: 700px
-name: refracaofocosconvexoAB.png
+name: refracaofocosconvexoAB
 ---
+Superfície esférica refratora convexa com $n_1 <> n_2$. Os dois focos são reais e têm distância focal diferente.
 :::
 :::{figure} ./figures/refracaofocosconvexoCD.png
 ---
 width: 700px
-name: refracaofocosconvexoCD.png
+name: refracaofocosconvexoCD
 ---
+Superfície esférica refratora convexa com $n_1 > n_2$. Os dois focos são virtuais. "Objeto virtual" não corresponde a um objeto, mas à condição incomum em que a luz incidente apresenta raios convergentes, em direção à posção objeto negativa (virtual). Essa condição é produzida, no primeiro gráfico da Figura [](refracaofocosconvexoAB) ou em lentes convergentes.
 :::
 :::{figure} ./figures/refracaofocosconcavoAB.png
 ---
 width: 700px
-name: refracaofocosconcavoAB.png
+name: refracaofocosconcavoAB
 ---
+Superfície esférica refratora côncava ($r<0$) com $n_1 <> n_2$. Novamente, os dois focos são virtuais. Em relação à situação anterior, a troca de $n_1$ por $n_2$, de $r$ por $-r$ e $f$ por $f'$ leva à mesma situação, como pode ser entendido também pelas equações. 
 :::
 :::{figure} ./figures/refracaofocosconcavoCD.png
 ---
 width: 700px
-name: refracaofocosconcavoCD.png
+name: refracaofocosconcavoCD
 ---
+Superfície esférica refratora côncava com $n_1 > n_2$. 
 :::
-
-
-As equações e as figuras evidenciam que as duas ações: (i) trocar a concavidade do espelho (mantendo o radio de curvatura) e (ii) inverter os índices de refração, dá o mesmo resultado óptico. Isso já era de se esperar pelo princípio da reversibilidade dos raios.
 
 #### Raios principais (notáveis)
 
 Para encontrar a imagem formada, trace os seguintes raios (conhecendo-se as distâncias focais):
-- Raio incidente paralelo ao eixo: refrata passando pelo foco imagem.
+- Raio incidente paralelo ao eixo: raio refratado (ou seu prolongamento) passando pelo foco imagem.
 - Raio partindo do foco objeto: refrata paralelamente.
 - Raio apontando ou partindo do centro: refrata sem desvio.
 
