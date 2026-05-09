@@ -330,12 +330,32 @@ A imagem se forma no infinito $(s' \rightarrow \infty)$ quando o objeto está lo
 \frac{n_1}{f}= \frac{(n_2-n_1)}{r}\;.
 \end{equation}
 Portanto, diferentemente do caso do espelho esférico, temos dois planos focais e duas distâncias focais diferentes. O sinal de $f$ e $f'$ é o mesmo e depende da natureza das superfícies (côncava ou convexa) e de se a luz passa para um meio mais refringente ($f,f' >0$, imagem real) ou menos refringente ($f,f'<0$, imagem virtual.)
-:::{figure} ./figures/refracaofocos4casos.png
+:::{figure} ./figures/refracaofocosconvexoAB.png
 ---
-width: 600px
-name: refracaofocos4casos.png
+width: 700px
+name: refracaofocosconvexoAB.png
 ---
 :::
+:::{figure} ./figures/refracaofocosconvexoCD.png
+---
+width: 700px
+name: refracaofocosconvexoCD.png
+---
+:::
+:::{figure} ./figures/refracaofocosconcavoAB.png
+---
+width: 700px
+name: refracaofocosconcavoAB.png
+---
+:::
+:::{figure} ./figures/refracaofocosconcavoCD.png
+---
+width: 700px
+name: refracaofocosconcavoCD.png
+---
+:::
+
+
 As equações e as figuras evidenciam que as duas ações: (i) trocar a concavidade do espelho (mantendo o radio de curvatura) e (ii) inverter os índices de refração, dá o mesmo resultado óptico. Isso já era de se esperar pelo princípio da reversibilidade dos raios.
 
 #### Raios principais (notáveis)
@@ -370,14 +390,7 @@ Usando a [Lei de Snell na aproximação paraxial](eq:leidesnellparaxial), chegam
 \begin{equation}\label{eqrefracaoaumentolateral}
 \frac{y'}{y}\;=\;\frac{-n_1 s'}{n_2\,s}\;.
 \end{equation}
-É essa magnifação lateral que explica por que os objetos parecem mais espessos dentro da água. A figura a seguir mostra o detalhamento da amplificação da espessura de um palito quando está parcialmente mergulhado na água.
-:::{figure} ./figures/refracaopalito.png
----
-width: 300px
-name: fig_refracaopalito
----
-:::
-Na escala arbitrária da régua da figura, o palito ocupa aproximadamente 6,5 marcações quando está fora da água, e 9 marcações quando mergulhado. A magnificação lateral correspondente é $9/6,5 = 1,38$, que é próxima do valor esperado para a refração do ar para a água ($n=1,33$).
+É essa magnifação lateral que explica por que os objetos parecem mais espessos dentro da água. 
 
 #### Exercício
  
@@ -496,7 +509,7 @@ Raios incidentes paralelos ao eixo emergem em direção a um dos focos, ou afast
 
 Para uma lente convergente, o foco objeto está no lado da luz incidente e o foco imagem está no lado da luz refratada (para uma lente divergente ocorre o contrário). Se luz paralela incide sobre a lente fazendo um pequeno ângulo com o eixo, ela é focalizada em um ponto no plano focal a uma distância $f$ da lente.
 
-O inverso da distância focal é chamado de dioptria (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$
+O inverso da distância focal é chamado de **dioptria** (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$
 
 A dioptria de uma lente mede sua capacidade de focalizar luz paralela a uma curta distância da lente. Quanto menor a distância focal, maior a dioptria. Por exemplo, uma lente com distância focal de $25,0$ cm tem dioptria de $4,0$ D. Uma lente com distância focal de $10,0$ cm tem potência de $10,0$ D. Como a distância focal de uma lente divergente é negativa, sua dioptria também é negativa.
 
