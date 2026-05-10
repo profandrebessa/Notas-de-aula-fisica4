@@ -335,7 +335,7 @@ Portanto, diferentemente do caso do espelho esférico, temos dois planos focais 
 width: 700px
 name: refracaofocosconvexoAB
 ---
-Superfície esférica refratora convexa com $n_1 <> n_2$. Os dois focos são reais e têm distância focal diferente.
+Superfície esférica refratora convexa com $n_1  <n_2$. Os dois focos são reais e têm distância focal diferente.
 :::
 :::{figure} ./figures/refracaofocosconvexoCD.png
 ---
@@ -349,7 +349,7 @@ Superfície esférica refratora convexa com $n_1 > n_2$. Os dois focos são virt
 width: 700px
 name: refracaofocosconcavoAB
 ---
-Superfície esférica refratora côncava ($r<0$) com $n_1 <> n_2$. Novamente, os dois focos são virtuais. Em relação à situação anterior, a troca de $n_1$ por $n_2$, de $r$ por $-r$ e $f$ por $f'$ leva à mesma situação, como pode ser entendido também pelas equações. 
+Superfície esférica refratora côncava ($r<0$) com $n_1 < n_2$. Novamente, os dois focos são virtuais. Em relação à situação anterior, a troca de $n_1$ por $n_2$, de $r$ por $-r$ e $f$ por $f'$ leva à mesma situação, como pode ser entendido também pelas equações. 
 :::
 :::{figure} ./figures/refracaofocosconcavoCD.png
 ---
@@ -358,6 +358,25 @@ name: refracaofocosconcavoCD
 ---
 Superfície esférica refratora côncava com $n_1 > n_2$. 
 :::
+
+#### Situação final da imagem: real ou virtual?
+
+Tal como no caso de um espelho esférico, a natureza da imagem vai depender da distância objeto. Porém, agora a natureza da imagem vai depender também da diferença entre os índices de refração. A figura abaixo analisa um raio que parte do ponto P no eixo da superfície convexa refratora, passando de um meio menos refringente ($n_1$) para um meio mais refringente ($n_2$). Nesta situação, o raio refratado irá se aproximar da normal. O desvio, porém, depende de $n_2-n_1$. 
+
+Se o desvio for pequeno (raio refratado desenhado em vermelho, para ilustrar), a imagem será virtual (raios divergem a partir do ponto de incidência, dando a impressão de partir de um ponto à esquerda). 
+
+Para um determinado valor intermediário de $n_2$ o raio refratado (raio azul) sairá paralelo. O ponto $P$ será o foco objeto, e a imagem se formará no infinito, como na situação de baixo da figura [](refracaofocosconvexoAB).
+
+ Finalmente, aumentando ainda mais $n_2$ (situação ilustrada pelo raio verde), haverá convergência na região refratada, e a imagem será real. É esta a situação detalhada na figura [](fig_refracaoereflexao).
+
+:::{figure} ./figures/refracaorealvirtualfoco.png
+---
+width: 800px
+name: refracaorealvirtualfoco
+---
+:::
+Ser grande ou pequeno é algo pouco preciso. Para superfícies convexas e na situação em que $n_2>n_1$, a condição precisa para a imagem ser real $(s'>0)$ é $s < f$, ou seja: $s<r/(n_{21}-1)$, onde $n_{21} =n_2/n_1$ é o índice de refração relativo. 
+
 
 #### Raios principais (notáveis)
 
@@ -431,16 +450,16 @@ Vimos que as ondas eletromagnéticas em um meio apresentam dispersão, isto é, 
 
 ## Lentes delgadas
 
-Vamos modelar as lentes como um meio com índice de refração $n$. A luz incidirá a partir do ar, sofrerá difração ao entrar na lente e ao voltar para o ar. Para simplificar, vamos admitir que cada metade da lente é formada por uma calota esférica ou por uma superfície plana. A figura abaixo exibe os seguintes tipos de lente: (a) biconvexa; (b) plano-convexa; (c) menisco positivo; (d) bicôncava; (4) plano-côncava; (f) menisco negativo.
+Vamos modelar as lentes como um meio com índice de refração $n$. A luz incidirá a partir do ar, sofrerá refração ao entrar na lente e ao voltar para o ar. Para simplificar, vamos admitir que cada metade da lente seja formada por uma calota esférica ou por uma superfície plana. A figura abaixo exibe os seguintes tipos de lente: (a) biconvexa; (b) plano-convexa; (c) menisco positivo; (d) bicôncava; (4) plano-côncava; (f) menisco negativo.
 :::{figure} ./figures/lentestipos.png
 ---
 width: 400px
 name: fig_lentestipos
 ---
 :::
+Os raios de curvatura usados podem ser diferentes, e serão denotados por $r_1$ e $r_2$. As lentes serão delgadas, isto é, consideraremos que a maior espessura da lente é menor que as dimensões envolvidas (raios de curvatura, distância objeto e distância imagem).
 
-Os raios de curvatura usados podem ser diferentes, e serão denotados por $r_1$ e $r_2$. A formação final da imagem envolve a aplicação dupla de expressões conhecidas.
-
+A formação final da imagem envolve a aplicação dupla de expressões conhecidas.
 Para ilustrar, vamos considerar uma lente biconvexa:
 :::{figure} ./figures/lentes1.png
 ---
@@ -454,7 +473,7 @@ A imagem do ponto $P$ para a superfície refratora convexa será virtual e vale 
 \frac{n_{ar}}{s}+ \frac{n}{s_1'}= \frac{(n-n_{ar})}{r_1}\;.
 \label{eq:equacaolenteaux1}
 ```
-A luz refratada através da primeira superfície atinge a segunda, que é uma superfície refratora côncava ($r_2<0$). Tudo se passa como se o raio viesse do ponto $P_1'$, à esquerda de $P$ (na posição $s_1'<0$).  Portanto, podemos considerar esse ponto como objeto para a segunda superfície refratora. Considerando que a maior espessura da lente é menor que as dimensões envolvidas, a distância objeto para a segunda refração é $s_2 = -s_1'$. Teremos:
+Vamos admitir que o ponto $P$ esteja entre o foco objeto e o vértice da superfície convexa. Nesta situação (caso do raio vermelho na [](refracaorealvirtualfoco)), os raios atravessam a superfície convexa como se estivem vindo de um ponto $P_1'$, à esquerda de $P$ (na posição $s_1'<0$). A luz refratada através da primeira superfície atinge a segunda, que é uma superfície refratora côncava ($r_2<0$). Podemos considerar o ponto $P'$  como objeto para a segunda superfície refratora. Desprezando a espessura da lente, a distância objeto para a segunda refração é $s_2 = -s_1'$. Teremos:
 ```{math}
 \frac{n}{-s_{1'}} + \frac{n_{ar}}{s'}= \frac{{n_{ar}-n}}{r_2}\;.
 \label{eq:equacaolenteaux2}
@@ -477,7 +496,7 @@ de modo que a [equação da lente](eq:eqlente) pode ser escrita como:
 \begin{equation}\label{eq:eqlentefoco}
 \frac{1}{s}+ \frac{1}{s'}= \frac{1}{f}\;,
 \end{equation}
-que, por coincidência, tem a mesma forma da equação do espelho esférico. Porém, a imagem se forma por mecanismos físicos diferentes, o que fica nítido pelo fato de a  a distância focal da lente depender dos raios $r_1$ e $r_2$ e do índice de refração relaivo, enquanto que, para o espelho, a distância focal depende apenas do raio. 
+que, por coincidência, tem a mesma forma da equação do espelho esférico. Porém, a imagem se forma por mecanismos físicos diferentes, o que fica nítido pelo fato de a distância focal da lente depender dos raios $r_1$ e $r_2$ e do índice de refração relaivo, enquanto que, para o espelho, a distância focal depende apenas do raio. 
 
 Note que a lente tem dois planos focais, um em cada lado da lente, e que a igualdade das distâncias focais só acontece por termos considerado o mesmo índice de refração dos dois lados da lente. 
 
@@ -491,26 +510,26 @@ name: lentesexerciciosbiconvexa.png
 ---
 :::
 
-Se luz paralela incide sobre a lente do exercício anterior pela esquerda, ela é focalizada em um ponto a 12 cm à direita da lente; enquanto, se luz paralela incide sobre a lente pela direita, ela é focalizada a 12 cm à esquerda da lente. 
-:::{figure} ./figures/lentesfoco0.png
----
-width: 350px
-name: lentesfoco0.png
----
-:::
-Usando a propriedade de reversibilidade dos raios de luz, podemos ver que a luz que diverge de um foco e incide sobre uma lente emerge dela como um feixe paralelo, como mostrado na figura abaixo.
+Se luz paralela incide sobre a lente do exercício anterior pela esquerda, ela é focalizada em um ponto a 12 cm à direita da lente; enquanto, se luz paralela incide sobre a lente pela direita, ela é focalizada a 12 cm à esquerda da lente. A figura abaixo mostra a formação da imagem no plano focal:
 :::{figure} ./figures/lentesfocos.png
 ---
 width: 500px
 name: lentesfocos.png
 ---
 :::
+Em particular, raios incidentes paralelos ao eixo emergem em direção a um dos focos, ou afastando-se dele.
 
-Raios incidentes paralelos ao eixo emergem em direção a um dos focos, ou afastando-se dele. Reciprocamente, raios incidentes dirigidos para um dos focos, ou afastando-se dele, emergem paralelos ao eixo.
+A figura abaixo mostra o comportamento da luz através da lente quando a luz é emitida por uma fonte em um dos focos da lente:
+:::{figure} ./figures/lentesfoco0.png
+---
+width: 350px
+name: lentesfoco0.png
+---
+:::
 
 Para uma lente convergente, o foco objeto está no lado da luz incidente e o foco imagem está no lado da luz refratada (para uma lente divergente ocorre o contrário). Se luz paralela incide sobre a lente fazendo um pequeno ângulo com o eixo, ela é focalizada em um ponto no plano focal a uma distância $f$ da lente.
 
-O inverso da distância focal é chamado de **dioptria** (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$
+O inverso da distância focal é chamado de **dioptria** (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$.
 
 A dioptria de uma lente mede sua capacidade de focalizar luz paralela a uma curta distância da lente. Quanto menor a distância focal, maior a dioptria. Por exemplo, uma lente com distância focal de $25,0$ cm tem dioptria de $4,0$ D. Uma lente com distância focal de $10,0$ cm tem potência de $10,0$ D. Como a distância focal de uma lente divergente é negativa, sua dioptria também é negativa.
 
