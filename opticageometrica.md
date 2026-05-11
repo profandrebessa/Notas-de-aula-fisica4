@@ -186,7 +186,7 @@ Exemplo de traçado de raios principais.
 
 :::{figure} ./figures/esfericoentreCeF.png
 ---
-width: 350px
+width: 450px
 name: fig_esfericoentreCeF
 ---
 Traçado de raios principais: segunda situação.
@@ -503,7 +503,7 @@ Na equação [](eq:focodalente), como $n>n_{ar}$, o sinal de $f$ será determina
 
 :::{note}
 :name: regrageraltipolente
-Como regra geral, as lentes mais espessas no centrodo que nas extremidades são convergentes. As lentes divergentes são menos espessas no centro.
+Como regra geral, as lentes mais espessas no centro do que nas extremidades são convergentes. As lentes divergentes são menos espessas no centro.
 :::
 
 Note que a lente tem dois planos focais, um em cada lado da lente, e que a igualdade das distâncias focais só acontece por termos considerado o mesmo índice de refração dos dois lados da lente. 
@@ -538,7 +538,7 @@ name: lentesfoco0.png
 
 Para uma lente convergente, o foco objeto está no lado da luz incidente e o foco imagem está no lado da luz refratada (para uma lente divergente ocorre o contrário). Se luz paralela incide sobre a lente fazendo um pequeno ângulo com o eixo, ela é focalizada em um ponto no plano focal a uma distância $f$ da lente.
 
-O inverso da distância focal é chamado de **dioptria** (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$.
+O inverso da distância focal é chamado de **poder de convergência** ou **dioptria**  da lente (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$.
 
 A dioptria de uma lente mede sua capacidade de focalizar luz paralela a uma curta distância da lente. Quanto menor a distância focal, maior a dioptria. Por exemplo, uma lente com distância focal de $25,0$ cm tem dioptria de $4,0$ D. Uma lente com distância focal de $10,0$ cm tem potência de $10,0$ D. Como a distância focal de uma lente divergente é negativa, sua dioptria também é negativa.
 
@@ -614,7 +614,28 @@ name: lentesexercicioduaslentesB
 ---
 :::
 
+#### Composição de lentes
+
+Quando duas lentes de distância focal $f_1$ e $f_2$ são colocadas juntas (desprezando-se a distância entre as lentes), a distância focal efetiva $f_{eq}$ é dada pela relação:
+\begin{equation}\label{eq:equacaocomposicaolentes}
+\frac{1}{f_{eq}} = \frac{1}{f_1} + \frac{1}{f_2}\;.
+\end{equation}
+Portanto, o poder de convergência das lentes se somam. 
+
+Para demonstrar a relação acima, aplicamos a [equação das lentes](eq:eqlentefoco) duas vezes e usamos que a distância imagem (negativa) da primeira lente é a distância objeto da segunda lente. Teremos:
+\begin{equation}
+\frac{1}{f_{1}} = \frac{1}{s_1} + \frac{1}{s_1'}\;
+\end{equation}
+e
+\begin{equation}
+\frac{1}{f_{2}} = \frac{1}{-s_1'} + \frac{1}{s_2'}\;.
+\end{equation}
+Adicionando, membro a membro, as duas equações, obtemos a equação [](eq:equacaocomposicaolentes).
+
+
 ## Noções sobre instrumentos ópticos
+
+### O olho humano
 
 O olho humano contém estruturas imersas em um fluido transparente com índice de refração próximo ao da água. Existem duas lentes: uma fixa, a **córnea**, formada de material duro e transparente; e outra flexível, o **cristalino**, que pode ter sua distância focal ajustada pelo músculo ciliar. A **íris** é um diafragma, isto é, uma estrutura que controla a entrada de luz. A abertura da íris é a **pupila**, que se contrai ou dilata conforme a necessidade de iluminição.
 
@@ -625,22 +646,22 @@ name: olhopartes
 ---
 :::
 
-Em um olho normal, a luz incidente paralela é focalizada em um ponto $P'$ da retina (fundo do olho). Ma retina estão as células sensíveis à luz (cones e bastonetes) que transmitem sinais ao nervo óptico, que está conectado ao cérebro, onde o sinal é processado. Para uma pessoa míope, a luz é focalizada em um pobnto atrás da retina. Uma lente convergente corrige o defeito, como mostrado na figura abaixo:
+Em um olho normal, a luz incidente é focalizada em um ponto $P'$ da retina (fundo do olho). Na retina estão as células sensíveis à luz (cones e bastonetes) que transmitem sinais ao nervo óptico, conectado ao cérebro, onde o sinal é processado. Para uma pessoa míope, a luz é focalizada em um ponto à frente da retina. O olho converge os raios mais do que deveria. Assim, raios paralelos (visão de objetos distantes) não são focalizados corretamente. Uma lente divergente corrige o defeito, como mostrado na figura abaixo:
 :::{figure} ./figures/olhomiopia.png
 ---
 width: 300px
 name: olhomiopia
 ---
-Na **miopia**, a luz incidente paralela é focalizada em um ponto atrás da retina. O problema pode ser corrigido com uma lente convergente.
+Na **miopia**, a luz incidente  é focalizada em um ponto à frente retina. O problema pode ser corrigido com uma lente divergente.
 :::
 :::{figure} ./figures/olhohipermetropia.png
 ---
 width: 300px
 name: olhohipermetropia
 ---
-Na **hipermetropia**, a luz incidente paralela é focalizada em um ponto antes da retina. Nesse caso, deve ser usada uma lente divergente.
+Na **hipermetropia**, a luz incidente  é focalizada em um ponto atrás retina. Nesse caso, deve ser usada uma lente convergente.
 :::
-Um outro defeito geométrico da visão é o **astigmatismo**. Neste caso, a córnea adquire uma forma não esférica, com uma curvatura horizontal e outra vertical. Neste caso, a distância imagem para raios horizontais é diferente da distância imagem para raios verticais. O defeito pode ser corrigido pelo uso de lentes de formato cilíndrico, em vez de esférico. 
+Um outro defeito geométrico da visão é o **astigmatismo**. Neste caso, a córnea adquire uma forma não esférica, com uma curvatura horizontal e outra vertical. Assim, a distância imagem para raios horizontais é diferente da distância imagem para raios verticais. O defeito pode ser corrigido pelo uso de lentes de formato cilíndrico, em vez de esférico. 
 :::{figure} ./figures/olhoastigmatismo.png
 ---
 width: 500px
@@ -648,9 +669,11 @@ name: olhoastigmatismo
 ---
 Nesta ilustração do astigmatismo, os raios emitidos por uma fonte pontual emitidos em um plano vertical (raios em vermelho) convergem para um ponto mais à frente que os raios que chegam no plano horizontal. 
 :::
-Quando o olho focaliza luz distante, o músculo ciliar está completamente relaxado e o sistemas de lente do olho tem sua máxima distância focal (cerca de 2,5 cm, que é a distância da córnea normal até a retina). Quando o objeto é trazido para perto do olho, a convergência da luz na retina depende de uma distância focal menor. Isso é obtido pela ação do músculo ciliar, que aumenta a curvatura do cristalino (redução do raio de curvatura). Esse processo é denominado **acomodação**. Se o objeto está muito próximo ao olho, pode não ser possível focalizá-lo. A menor distância objeto para a qual o olho consegue focalizar a imagem na retina é denominada ponto próximo. Para uma criança, o ponto próximo é cerca de 10 cm. Aos 60 anos, esse ponto pode ir a 200 cm. O valor de referência considerado para o olho humano é 25 cm. O problema do olho cansado (presbiopia) é a dificuldade da musculatura em controlar a acomodação do olho. Não é um problema geométrico. Sua correção é feita por uma lente multifocal, isto é, uma lente com uma curvatura para perto e outra para longe.
+Quando o olho focaliza luz distante, o músculo ciliar está completamente relaxado e o sistemas de lente do olho tem sua máxima distância focal (cerca de 2,5 cm, que é a distância da córnea normal até a retina). Quando o objeto é trazido para perto do olho, a convergência da luz na retina depende de um maior poder de convergência (dioptria). Isso é obtido pela ação do músculo ciliar, que aumenta a curvatura do cristalino (redução do raio de curvatura e, portanto, da distância focal). Esse processo é denominado **acomodação**. Se o objeto está muito próximo ao olho, pode não ser possível focalizá-lo. O ponto mais próximo do olho para o qual o olho consegue focalizar a imagem na retina é denominado **ponto próximo**. Para uma criança, a distância do ponto próximo é cerca de 10 cm. Aos 60 anos, essa distância pode ser 200 cm. O valor de referência considerado para o olho humano é 25 cm. O problema do olho cansado (**presbiopia**) é a dificuldade da musculatura em controlar a acomodação do olho. Não é um problema geométrico. Sua correção é feita por uma lente multifocal, isto é, uma lente com uma curvatura para perto e outra para longe.
 
-#### Tamanho aparente
+É interessante ver a consequência da presbiopia para o olho míope. Como o olho míope tem um excesso de convergência, a acomodação é mais simples e o ponto próximo fica mais perto do olho do que para uma pessoa normal da mesma idade. Então, um adulto míope costuma ter uma visão melhor para perto. Por outro lado, a presbiopia pode ser confundidade com a hipermetropia na dificuldade em enxergar objetos próximos. A pessoa com hipermetropia precisa forçar muito para ler de perto. A pessoa com presbiopia perde essa capacidade de acomodação, mesmo com esforço. 
+ 
+#### Tamanho aparente e lentes de aumento
 
 O tamanho aparente de um objeto é determinado pelo tamanho da imagem formada na retina. Quando visto de perto, um objeto produz uma imagem maior na retina, como sugere a figura abaixo:
 :::{figure} ./figures/olhotamanhoaparente.png
@@ -660,5 +683,53 @@ name: olhotamanhoaparente
 ---
 Na figura (b), o ângulo visual $\phi_2$ e a correspondente imagem (tamanho $y_2'$) são maiores que na situação (a) pelo fato de o objeto estar mais próximo.
 :::
+O tamanho da imagem é proporcional ao ângulo subtendido pelo objeto no olho. Pela figura, temos (para pequenos ângulos):
+\begin{equation}
+\phi =  \frac{y'}{2,5\,cm}\;\;\;\hbox{e}\;\;\;\theta= \frac{y}{s}.
+\end{equation}
+O tamanho da imagem na retina é proporcional ao tamanho do objeto e inversamente proporcional à distância do objeto ao olho. Como o ponto próximo é o mais próximo que o olho consegue focalizar na retina, é nele que se consegue o máximo tamanho aparente. Se $d_p$ é a distância do ponto próximo e $y$ é o tamanho do objeto, o ângulo subtendido correspondente é:
+\begin{equation}\label{olhoeqpontoproximo}
+\theta_{p}\;=\;\frac{y}{d_p}\,.
+\end{equation}
 
 
+#### Exemplo: grau para vista cansada
+O ponto próximo de um olho de uma pessoa está a 75 cm da retina. Com a lente do óculos, essa distância cai para o valor de referência,25 cm. Despreze a distância entre a lente e o olho. (a) Qual é a dioptria da lente? (b) Qual é o aumento lateral da lente? 
+:::{figure} ./figures/olhoexemplooculos.png
+---
+width: 500px
+name: olhoexemplooculos
+---
+:::
+O fato de a lente trazer o ponto próximo do olho de $75$ cm de distância para $25$ cm de distância significa que uma imagem virtual é formada a $75$ cm da lente se o objeto é colocado a $25$ cm da lente (os raios que entram no olho parecem divergir de um ponto a $75$ cm). Usando a equação [](eq:eqlentefoco) para a lente, obtemos:
+\begin{equation}
+\frac{1}{f} = \frac{1}{0,25} + \frac{1}{-0,75}\,,
+\end{equation}
+de modo que a diopria é 1/f = 2,7D. O aumento lateral é $y'/y=-s'/s=0,75/0,25 =3$. 
+
+Uma pessoa com ponto próximo a $75$ cm tem presbiopia. Para ler um livro, ela tem que afastá-lo a 75 cm, o que faz com que a imagem formada na retina seja muito pequena. A lente produz uma imagem também a 75 cm do olho, porém, 3 vezes maior. 
+
+Perceba que o objeto foi colocado antes da distância focal da lente (ponto $F'$ na imagem). Se o objeto fosse colocado no ponto focal da lente, os raios emergiriam dela paralelos e o olho poderia ficar completamente relaxado, pois nessa situação, raios incidentes paralelos são projetados na retina, sem necessidade de acomodação. A desvantagem é que, estando o objeto mais distante da lente, o ângulo subtendido pelo objeto na lente seria menor e, consequentemente, o tamanho aparente da imagem no olho seria menor. 
+
+Objetos como as lupas funcionam assim: o objeto é colocado no plano focal da lente. Se a distância focal da lente for menor que a distância do ponto próximo da pessoa, a lente irá aumentar o tamanho aparente do objeto, mesmo com o olho relaxado. 
+:::{figure} ./figures/lupafocoolho.png
+---
+width: 500px
+name: lupafocoolho
+---
+:::
+Nessa situação o ângulo subtendido pela lente é dado pelo quociente:
+\begin{equation}
+\theta_{lupa}\;=\;\frac{y}{f}\,.
+\end{equation}
+Comparando com o ângulo máximo a olho nu (com o objeto localizado no ponto próximo), dado pela equação [](olhoeqpontoproximo), obtemos que a magnificação proporcionada pela lupa é:
+\begin{equation}\label{olhoaumentolupa}
+M = \frac{\theta_{lupa}}{\theta_p} = \frac{d_p}{f}\;.
+\end{equation}
+Aproximando o objeto da lente um pouco mais, ainda será possível formar a imagem, com o auxílio do olho, e a imagem seria ainda maior. 
+
+Pela equação [](olhoaumentolupa), quanto menor a distância focal, maior o aumento. Valores pequenos de $f$ geram grandes aberrações esféricas, que limitam o aumento máximo das lupas para menos de 10 vezes. Lupas comerciais, tipicamente, têm aumento de até 3 vezes.
+
+#### Exercício: magnificação da lupa
+
+Uma pessoa com distância do ponto próximo igual a 25 cm usa uma lupa de $25\,D$. Qual é a magnificação obtida?
