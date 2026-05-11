@@ -456,6 +456,7 @@ Vamos modelar as lentes como um meio com índice de refração $n$. A luz incidi
 width: 400px
 name: fig_lentestipos
 ---
+Alguns tipos de lente.
 :::
 Os raios de curvatura usados podem ser diferentes, e serão denotados por $r_1$ e $r_2$. As lentes serão delgadas, isto é, consideraremos que a maior espessura da lente é menor que as dimensões envolvidas (raios de curvatura, distância objeto e distância imagem).
 
@@ -498,7 +499,15 @@ de modo que a [equação da lente](eq:eqlente) pode ser escrita como:
 \end{equation}
 que, por coincidência, tem a mesma forma da equação do espelho esférico. Porém, a imagem se forma por mecanismos físicos diferentes, o que fica nítido pelo fato de a distância focal da lente depender dos raios $r_1$ e $r_2$ e do índice de refração relaivo, enquanto que, para o espelho, a distância focal depende apenas do raio. 
 
+Na equação [](eq:focodalente), como $n>n_{ar}$, o sinal de $f$ será determinado por $r_1$ e $r_2$. Na [](fig_lentestipos), as três primeiras lentes têm a metade esquerda convexa ($r_1>0$) e a segunda metade tem raio de curvatura negativo, infinito ou positivo, porém maior que $r_1$. Assim, as três primeiras lentes têm distância focal positiva, ou seja, são lentes convergentes. O oposto se dá com as 3 lentes à direita na [](fig_lentestipos).
+
+:::{note}
+:name: regrageraltipolente
+Como regra geral, as lentes mais espessas no centrodo que nas extremidades são convergentes. As lentes divergentes são menos espessas no centro.
+:::
+
 Note que a lente tem dois planos focais, um em cada lado da lente, e que a igualdade das distâncias focais só acontece por termos considerado o mesmo índice de refração dos dois lados da lente. 
+
 
 #### Exercício:
 
@@ -555,14 +564,101 @@ Veja o traçado dos raios notáveis para uma lente biconvexa:
 :::{figure} ./figures/refracaonotaveisbiconvexa.png
 ---
 width: 600px
-name: refracaonotaveisbiconvexa.png
+name: refracaonotaveisbiconvexa
 ---
 :::
 e bicôncava:
 :::{figure} ./figures/refracaonotaveisbiconcava.png
 ---
 width: 500px
-name: refracaonotaveisbiconcava.png
+name: refracaonotaveisbiconcava
 ---
 :::
 Observe a posição invertida do foco imagem e do foco objeto, quando comparamos a lente biconvexa com a bicôncava.
+
+#### Magnificação lateral
+Tomando por base a [](refracaonotaveisbiconvexa), temos que $y/s = \tan \theta = -y'/s'$, pois $y'<0$ (imagem invertida). Portanto:
+\begin{equation}
+\frac{y'}{y}\;=\;-\frac{-s'}{s}\;.
+\end{equation}
+A mesma relação é obtida diretamente também pela [](refracaonotaveisbiconcava), onde, no caso, $y'>0$ e $s'<0$ (imagem do mesmo lado que a luz incidente).
+
+
+#### Exercício: lente biconvexa
+
+Um objeto de 1,2 cm é colocado a 4,0 cm de uma lente biconvexa com distância focal de 12 cm. Localize a imagem graficamente e usando as equações. Determine se a imagem é real ou virtual e encontre a sua altura. Desenhe um olho na figura indicando seu local e orientação para ver a imagem.
+:::{figure} ./figures/figexerciciolentebiconvexa.png
+---
+width: 700px
+name: figexerciciolentebiconvexa
+---
+:::
+
+#### Exercício com duas lentes: situação 1
+
+Uma segunda lente com distância focal de 6,0 cm é colocada 12 cm à direita da lente do exercício anterior. A figura a seguir mostra o caminho dos raios notáveis. Calcule os valores das posições relevantes mostradas no eixo das lentes.
+:::{figure} ./figures/lentesexercicioduaslentes.png
+---
+width: 700px
+name: lentesexercicioduaslentes
+---
+:::
+
+#### Exercício com duas lentes: situação 2    
+
+Duas lentes com distância focal de 10 cm estão a uma distância de 15 cm. Encontre a localização da imagem final para um objeto que está a 15 cm de uma das lentes e a 30 cm da outra lente. Calcule os valores das posições relevantes.
+:::{figure} ./figures/lentesexercicioduaslentesB.png
+---
+width: 700px
+name: lentesexercicioduaslentesB
+---
+:::
+
+## Noções sobre instrumentos ópticos
+
+O olho humano contém estruturas imersas em um fluido transparente com índice de refração próximo ao da água. Existem duas lentes: uma fixa, a **córnea**, formada de material duro e transparente; e outra flexível, o **cristalino**, que pode ter sua distância focal ajustada pelo músculo ciliar. A **íris** é um diafragma, isto é, uma estrutura que controla a entrada de luz. A abertura da íris é a **pupila**, que se contrai ou dilata conforme a necessidade de iluminição.
+
+:::{figure} ./figures/olhopartes.png
+---
+width: 300px
+name: olhopartes
+---
+:::
+
+Em um olho normal, a luz incidente paralela é focalizada em um ponto $P'$ da retina (fundo do olho). Ma retina estão as células sensíveis à luz (cones e bastonetes) que transmitem sinais ao nervo óptico, que está conectado ao cérebro, onde o sinal é processado. Para uma pessoa míope, a luz é focalizada em um pobnto atrás da retina. Uma lente convergente corrige o defeito, como mostrado na figura abaixo:
+:::{figure} ./figures/olhomiopia.png
+---
+width: 300px
+name: olhomiopia
+---
+Na **miopia**, a luz incidente paralela é focalizada em um ponto atrás da retina. O problema pode ser corrigido com uma lente convergente.
+:::
+:::{figure} ./figures/olhohipermetropia.png
+---
+width: 300px
+name: olhohipermetropia
+---
+Na **hipermetropia**, a luz incidente paralela é focalizada em um ponto antes da retina. Nesse caso, deve ser usada uma lente divergente.
+:::
+Um outro defeito geométrico da visão é o **astigmatismo**. Neste caso, a córnea adquire uma forma não esférica, com uma curvatura horizontal e outra vertical. Neste caso, a distância imagem para raios horizontais é diferente da distância imagem para raios verticais. O defeito pode ser corrigido pelo uso de lentes de formato cilíndrico, em vez de esférico. 
+:::{figure} ./figures/olhoastigmatismo.png
+---
+width: 500px
+name: olhoastigmatismo
+---
+Nesta ilustração do astigmatismo, os raios emitidos por uma fonte pontual emitidos em um plano vertical (raios em vermelho) convergem para um ponto mais à frente que os raios que chegam no plano horizontal. 
+:::
+Quando o olho focaliza luz distante, o músculo ciliar está completamente relaxado e o sistemas de lente do olho tem sua máxima distância focal (cerca de 2,5 cm, que é a distância da córnea normal até a retina). Quando o objeto é trazido para perto do olho, a convergência da luz na retina depende de uma distância focal menor. Isso é obtido pela ação do músculo ciliar, que aumenta a curvatura do cristalino (redução do raio de curvatura). Esse processo é denominado **acomodação**. Se o objeto está muito próximo ao olho, pode não ser possível focalizá-lo. A menor distância objeto para a qual o olho consegue focalizar a imagem na retina é denominada ponto próximo. Para uma criança, o ponto próximo é cerca de 10 cm. Aos 60 anos, esse ponto pode ir a 200 cm. O valor de referência considerado para o olho humano é 25 cm. O problema do olho cansado (presbiopia) é a dificuldade da musculatura em controlar a acomodação do olho. Não é um problema geométrico. Sua correção é feita por uma lente multifocal, isto é, uma lente com uma curvatura para perto e outra para longe.
+
+#### Tamanho aparente
+
+O tamanho aparente de um objeto é determinado pelo tamanho da imagem formada na retina. Quando visto de perto, um objeto produz uma imagem maior na retina, como sugere a figura abaixo:
+:::{figure} ./figures/olhotamanhoaparente.png
+---
+width: 500px
+name: olhotamanhoaparente
+---
+Na figura (b), o ângulo visual $\phi_2$ e a correspondente imagem (tamanho $y_2'$) são maiores que na situação (a) pelo fato de o objeto estar mais próximo.
+:::
+
+
