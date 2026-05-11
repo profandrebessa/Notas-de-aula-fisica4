@@ -450,7 +450,11 @@ Vimos que as ondas eletromagnéticas em um meio apresentam dispersão, isto é, 
 
 ## Lentes delgadas
 
-Vamos modelar as lentes como um meio com índice de refração $n$. A luz incidirá a partir do ar, sofrerá refração ao entrar na lente e ao voltar para o ar. Para simplificar, vamos admitir que cada metade da lente seja formada por uma calota esférica ou por uma superfície plana. A figura abaixo exibe os seguintes tipos de lente: (a) biconvexa; (b) plano-convexa; (c) menisco positivo; (d) bicôncava; (4) plano-côncava; (f) menisco negativo.
+Vamos modelar as lentes como um meio com índice de refração $n$. A luz incidirá a partir do ar, sofrerá refração ao entrar na lente e ao voltar para o ar. Para simplificar, vamos admitir que cada metade da lente seja formada por uma calota esférica ou por uma superfície plana. 
+
+#### Tipos de lente
+
+A figura abaixo exibe os seguintes tipos de lente: (a) biconvexa; (b) plano-convexa; (c) menisco positivo; (d) bicôncava; (4) plano-côncava; (f) menisco negativo.
 :::{figure} ./figures/lentestipos.png
 ---
 width: 400px
@@ -459,6 +463,8 @@ name: fig_lentestipos
 Alguns tipos de lente.
 :::
 Os raios de curvatura usados podem ser diferentes, e serão denotados por $r_1$ e $r_2$. As lentes serão delgadas, isto é, consideraremos que a maior espessura da lente é menor que as dimensões envolvidas (raios de curvatura, distância objeto e distância imagem).
+
+### Formação da imagem
 
 A formação final da imagem envolve a aplicação dupla de expressões conhecidas.
 Para ilustrar, vamos considerar uma lente biconvexa:
@@ -509,7 +515,7 @@ Como regra geral, as lentes mais espessas no centro do que nas extremidades são
 Note que a lente tem dois planos focais, um em cada lado da lente, e que a igualdade das distâncias focais só acontece por termos considerado o mesmo índice de refração dos dois lados da lente. 
 
 
-#### Exercício:
+#### Exercício: lente biconvexa
 
 Uma lente delgada de vidro, biconvexa, com índice de refração n=1,5 possui raios de curvatura com magnitudes de 10 cm e 15 cm, como mostrado na figura abaixo. Mostre que sua distância focal no ar é 12 cm.
 :::{figure} ./figures/lentesexerciciobiconvexa.png
@@ -519,15 +525,14 @@ name: lentesexerciciosbiconvexa.png
 ---
 :::
 
-Se luz paralela incide sobre a lente do exercício anterior pela esquerda, ela é focalizada em um ponto a 12 cm à direita da lente; enquanto, se luz paralela incide sobre a lente pela direita, ela é focalizada a 12 cm à esquerda da lente. A figura abaixo mostra a formação da imagem no plano focal:
+Se luz paralela incide sobre a lente do exercício anterior pela esquerda, ela é focalizada em um ponto a 12 cm à direita da lente; enquanto, se luz paralela incide sobre a lente pela direita, ela é focalizada a 12 cm à esquerda da lente. A figura abaixo mostra a formação da imagem no plano focal. Nela, luz paralela incide sobre a lente fazendo um pequeno ângulo com o eixo. A luz é focalizada em um ponto no plano focal a uma distância $f$ da lente. Em particular, raios incidentes paralelos ao eixo emergem em direção a um dos focos, ou afastando-se dele.
+
 :::{figure} ./figures/lentesfocos.png
 ---
 width: 500px
 name: lentesfocos.png
 ---
 :::
-Em particular, raios incidentes paralelos ao eixo emergem em direção a um dos focos, ou afastando-se dele.
-
 A figura abaixo mostra o comportamento da luz através da lente quando a luz é emitida por uma fonte em um dos focos da lente:
 :::{figure} ./figures/lentesfoco0.png
 ---
@@ -536,13 +541,14 @@ name: lentesfoco0.png
 ---
 :::
 
-Para uma lente convergente, o foco objeto está no lado da luz incidente e o foco imagem está no lado da luz refratada (para uma lente divergente ocorre o contrário). Se luz paralela incide sobre a lente fazendo um pequeno ângulo com o eixo, ela é focalizada em um ponto no plano focal a uma distância $f$ da lente.
+Para uma lente convergente, o foco objeto está no lado da luz incidente e o foco imagem está no lado da luz refratada (para uma lente divergente ocorre o contrário). 
 
 O inverso da distância focal é chamado de **poder de convergência** ou **dioptria**  da lente (representada pela letra $D$ e popularmente chamada de **grau** da lente). Quando a distância focal é expressa em metros, a dioptria é dada em $m^{-1}$.
 
-A dioptria de uma lente mede sua capacidade de focalizar luz paralela a uma curta distância da lente. Quanto menor a distância focal, maior a dioptria. Por exemplo, uma lente com distância focal de $25,0$ cm tem dioptria de $4,0$ D. Uma lente com distância focal de $10,0$ cm tem potência de $10,0$ D. Como a distância focal de uma lente divergente é negativa, sua dioptria também é negativa.
+A dioptria de uma lente mede sua capacidade de focalizar luz paralela a uma curta distância da lente. Quanto menor a distância focal, maior a dioptria. Por exemplo, uma lente com distância focal de $25,0$ cm tem dioptria de $4,0$ m$^{-1}$. Uma lente com distância focal de $10,0$ cm tem dioptria de $10,0$ $^{-1}$. Como a distância focal de uma lente divergente é negativa, sua dioptria também é negativa.
 
-#### Exercício
+#### Exercício: menisco positivo
+A lente mostrada na figura abaixo tem índice de refração 1,5 e raios de curvatura de $10,0$ cm e $13,0$ cm. Encontre: (a) sua distância focal e (b) sua dioptria.
 :::{figure} ./figures/lentesexerciciomenisco.png
 ---
 width: 500px
@@ -550,12 +556,11 @@ name: lentesexerciciomenisco.png
 ---
 :::
 
-A lente mostrada na figura abaixo tem índice de refração 1,5 e raios de curvatura de $10,0$ cm e $13,0$ cm. Encontre: (a) sua distância focal e (b) sua dioptria.
 
 
 #### Raios principais (notáveis)
 
-Uma vez calculada a distância focal da lente, para encontrar a imagem formada, trace os seguintes raios:
+Uma vez conhecida (ou calculada) a distância focal da lente, para encontrar a imagem formada, trace os seguintes raios:
 - Raio incidente paralelo ao eixo: atravessa a lente e passa pelo foco imagem.
 - Raio partindo do foco objeto: atravessa a lente e sai paralelo ao eixo da lente.
 - Raio apontando ou partindo do centro da lente: atravessa sem desvio.
@@ -635,7 +640,7 @@ Adicionando, membro a membro, as duas equações, obtemos a equação [](eq:equa
 
 ## Noções sobre instrumentos ópticos
 
-### O olho humano
+### O olho humano e a lupa  
 
 O olho humano contém estruturas imersas em um fluido transparente com índice de refração próximo ao da água. Existem duas lentes: uma fixa, a **córnea**, formada de material duro e transparente; e outra flexível, o **cristalino**, que pode ter sua distância focal ajustada pelo músculo ciliar. A **íris** é um diafragma, isto é, uma estrutura que controla a entrada de luz. A abertura da íris é a **pupila**, que se contrai ou dilata conforme a necessidade de iluminição.
 
@@ -669,9 +674,11 @@ name: olhoastigmatismo
 ---
 Nesta ilustração do astigmatismo, os raios emitidos por uma fonte pontual emitidos em um plano vertical (raios em vermelho) convergem para um ponto mais à frente que os raios que chegam no plano horizontal. 
 :::
-Quando o olho focaliza luz distante, o músculo ciliar está completamente relaxado e o sistemas de lente do olho tem sua máxima distância focal (cerca de 2,5 cm, que é a distância da córnea normal até a retina). Quando o objeto é trazido para perto do olho, a convergência da luz na retina depende de um maior poder de convergência (dioptria). Isso é obtido pela ação do músculo ciliar, que aumenta a curvatura do cristalino (redução do raio de curvatura e, portanto, da distância focal). Esse processo é denominado **acomodação**. Se o objeto está muito próximo ao olho, pode não ser possível focalizá-lo. O ponto mais próximo do olho para o qual o olho consegue focalizar a imagem na retina é denominado **ponto próximo**. Para uma criança, a distância do ponto próximo é cerca de 10 cm. Aos 60 anos, essa distância pode ser 200 cm. O valor de referência considerado para o olho humano é 25 cm. O problema do olho cansado (**presbiopia**) é a dificuldade da musculatura em controlar a acomodação do olho. Não é um problema geométrico. Sua correção é feita por uma lente multifocal, isto é, uma lente com uma curvatura para perto e outra para longe.
+Quando o olho focaliza luz distante, o músculo ciliar está completamente relaxado e o sistema de lentes do olho tem sua máxima distância focal (cerca de 2,5 cm, que é a distância da córnea normal até a retina). Quando o objeto é trazido para perto do olho, a convergência da luz na retina depende de um maior poder de convergência (dioptria). Isso é obtido pela ação do músculo ciliar, que aumenta a curvatura do cristalino (redução do raio de curvatura e, portanto, da distância focal). Esse processo é denominado **acomodação**. Se o objeto está muito próximo ao olho, pode não ser possível focalizá-lo. O ponto mais próximo do olho para o qual o olho consegue focalizar a imagem na retina é denominado **ponto próximo**. Para uma criança, a distância do ponto próximo é cerca de 10 cm. Aos 60 anos, essa distância pode ser 200 cm. O valor de referência considerado para o olho humano é 25 cm. O problema do olho cansado (**presbiopia**) é a dificuldade da musculatura em realizar a acomodação do olho para objetos próximos. Não é um problema geométrico. Sua correção é feita por uma lente multifocal, isto é, uma lente com uma curvatura para perto e outra para longe.
 
-É interessante ver a consequência da presbiopia para o olho míope. Como o olho míope tem um excesso de convergência, a acomodação é mais simples e o ponto próximo fica mais perto do olho do que para uma pessoa normal da mesma idade. Então, um adulto míope costuma ter uma visão melhor para perto. Por outro lado, a presbiopia pode ser confundidade com a hipermetropia na dificuldade em enxergar objetos próximos. A pessoa com hipermetropia precisa forçar muito para ler de perto. A pessoa com presbiopia perde essa capacidade de acomodação, mesmo com esforço. 
+É interessante ver a consequência da presbiopia para o olho míope. Como o olho míope tem um excesso de convergência, a acomodação é mais simples e o ponto próximo fica mais perto do olho do que para uma pessoa normal da mesma idade. Então, um adulto míope costuma ter uma visão melhor para perto do que adultos sem miopia. 
+
+Em princípio, a presbiopia pode ser confundidade com a hipermetropia, pois ambos os efeitos causam dificuldade em enxergar objetos próximos. A pessoa com hipermetropia precisa forçar muito para ler de perto. A pessoa com presbiopia perde essa capacidade de acomodação, mesmo com esforço. 
  
 #### Tamanho aparente e lentes de aumento
 
@@ -711,7 +718,7 @@ Uma pessoa com ponto próximo a $75$ cm tem presbiopia. Para ler um livro, ela t
 
 Perceba que o objeto foi colocado antes da distância focal da lente (ponto $F'$ na imagem). Se o objeto fosse colocado no ponto focal da lente, os raios emergiriam dela paralelos e o olho poderia ficar completamente relaxado, pois nessa situação, raios incidentes paralelos são projetados na retina, sem necessidade de acomodação. A desvantagem é que, estando o objeto mais distante da lente, o ângulo subtendido pelo objeto na lente seria menor e, consequentemente, o tamanho aparente da imagem no olho seria menor. 
 
-Objetos como as lupas funcionam assim: o objeto é colocado no plano focal da lente. Se a distância focal da lente for menor que a distância do ponto próximo da pessoa, a lente irá aumentar o tamanho aparente do objeto, mesmo com o olho relaxado. 
+Objetos como as lupas funcionam assim: o objeto é colocado no plano focal da lente. 
 :::{figure} ./figures/lupafocoolho.png
 ---
 width: 500px
@@ -722,14 +729,39 @@ Nessa situação o ângulo subtendido pela lente é dado pelo quociente:
 \begin{equation}
 \theta_{lupa}\;=\;\frac{y}{f}\,.
 \end{equation}
-Comparando com o ângulo máximo a olho nu (com o objeto localizado no ponto próximo), dado pela equação [](olhoeqpontoproximo), obtemos que a magnificação proporcionada pela lupa é:
+Se a distância focal da lente for menor que a distância do ponto próximo da pessoa, $\theta_{lupa} > \theta_p$ (ângulo subtendido no olho pelo objeto, dado pela equação [](olhoeqpontoproximo)). Como o tamanho aparente da imagem é proporcional ao ângulo subtendido, a lente irá aumentar o tamanho aparente do objeto, mesmo com o olho relaxado. Comparando com o ângulo máximo a olho nu (com o objeto localizado no ponto próximo), obtemos que a magnificação proporcionada pela lupa é:
 \begin{equation}\label{olhoaumentolupa}
 M = \frac{\theta_{lupa}}{\theta_p} = \frac{d_p}{f}\;.
 \end{equation}
 Aproximando o objeto da lente um pouco mais, ainda será possível formar a imagem, com o auxílio do olho, e a imagem seria ainda maior. 
 
-Pela equação [](olhoaumentolupa), quanto menor a distância focal, maior o aumento. Valores pequenos de $f$ geram grandes aberrações esféricas, que limitam o aumento máximo das lupas para menos de 10 vezes. Lupas comerciais, tipicamente, têm aumento de até 3 vezes.
+Pela equação [](olhoaumentolupa), quanto menor a distância focal, maior o aumento. Valores pequenos de $f$ correspondem a lentes com raios pequenos, que geram grandes aberrações esféricas. As aberrações limitam o aumento máximo das lupas para menos de 10 vezes. Lupas comerciais, tipicamente, têm aumento cerca de 3 vezes.
 
 #### Exercício: magnificação da lupa
 
-Uma pessoa com distância do ponto próximo igual a 25 cm usa uma lupa de $25\,D$. Qual é a magnificação obtida?
+Uma pessoa com distância do ponto próximo igual a 25 cm usa uma lupa de $20\,D$. Qual é a magnificação obtida?
+
+### O microscópio simples
+
+O microscópio simples consegue aumentos maiores que as lupas por utilizar uma montagem diferente.
+:::{figure} ./figures/lentesmicroscopiosimples.png
+---
+width: 500px
+name: lentesmicroscopiosimples
+---
+:::
+ O objeto é colocado um pouco além do foco de uma lente (a **objetiva**) com pequena distância focal. Estando além do foco, a imagem será real e invertida. Estando próximo ao foco, a magnificação da imagem será grande. Podemos entender tudo isso manipulando a equação [](eq:eqlentefoco):
+\begin{equation}
+\frac{1}{s'} = \frac{1}{f}-\frac{1}{s} = \frac{s-f}{s\,f}.
+\end{equation}
+Como $s$ e $s'$ têm papeis simétricos na equação da lente, teremos também:
+\begin{equation}
+\frac{1}{s} = \frac{1}{f}-\frac{1}{s'} = \frac{s'-f}{s'\,f}.
+\end{equation}
+A imagem será formada à direita do foco imagem. Vamos denotar a diferença $s'-f$ por $L$. Na prática, $L$ é o comprimento do tubo do microscópio.  Em termos de $L$ podemos reescrever a equação anterior como:
+\begin{equation}
+\frac{s'}{s} = \frac{L}{f}.
+\end{equation}
+A magnificação da imagem da objetiva é, portanto: $y'/y = -L/f$.
+
+Posiciona-se uma segunda lente, a ocular, de forma que a imagem da objetiva caia no plano focal da ocular.

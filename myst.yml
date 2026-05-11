@@ -1,9 +1,10 @@
 version: 1
 project:
-  id: 88b5564e-b433-423c-8587-2af19a1a6f49
-  title: Notas de aula de Física IV
   toc:
     - file: opticageometrica.md
+    - file: interferenciaedifracao.md
 site:
   template: book-theme
   base_url: /notas-de-aula-fisica4
+
+
