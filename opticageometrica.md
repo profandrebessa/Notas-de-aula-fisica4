@@ -752,16 +752,49 @@ name: lentesmicroscopiosimples
 :::
  O objeto é colocado um pouco além do foco de uma lente (a **objetiva**) com pequena distância focal. Estando além do foco, a imagem será real e invertida. Estando próximo ao foco, a magnificação da imagem será grande. Podemos entender tudo isso manipulando a equação [](eq:eqlentefoco):
 \begin{equation}
-\frac{1}{s'} = \frac{1}{f}-\frac{1}{s} = \frac{s-f}{s\,f}.
+\frac{1}{s'} = \frac{1}{f_{ob}}-\frac{1}{s} = \frac{s-f_{ob}}{s\,f_{ob}}.
 \end{equation}
 Como $s$ e $s'$ têm papeis simétricos na equação da lente, teremos também:
 \begin{equation}
-\frac{1}{s} = \frac{1}{f}-\frac{1}{s'} = \frac{s'-f}{s'\,f}.
+\frac{1}{s} = \frac{1}{f_{ob}}-\frac{1}{s'} = \frac{s'-f_{ob}}{s'\,f_{ob}}.
 \end{equation}
-A imagem será formada à direita do foco imagem. Vamos denotar a diferença $s'-f$ por $L$. Na prática, $L$ é o comprimento do tubo do microscópio.  Em termos de $L$ podemos reescrever a equação anterior como:
+A imagem será formada à direita do foco imagem. Vamos denotar a diferença $s'-f_{ob}$ por $L$ (veja na figura).
+Em termos de $L$ podemos reescrever a equação anterior como:
 \begin{equation}
-\frac{s'}{s} = \frac{L}{f}.
+\frac{s'}{s} = \frac{L}{f_{ob}}.
 \end{equation}
-A magnificação da imagem da objetiva é, portanto: $y'/y = -L/f$.
+A magnificação da objetiva será, portanto, $M_{ob} = -L/f_{ob}$.
 
-Posiciona-se uma segunda lente, a ocular, de forma que a imagem da objetiva caia no plano focal da ocular.
+Posiciona-se uma segunda lente, a ocular, de forma que a imagem da objetiva caia no plano focal da ocular. A ocular funciona como uma lupa, aumentando o ângulo subtendido no olho pela imagem real produzida pela objetiva. A magnificação da ocular será dada por $M_{oc}=d_{p}/f_{oc}$, sendo $d_p$ a distância do ponto próximo do observador. A magnificação final será o produto da magnificação de cada lente:
+\begin{equation}
+M= M_{ob}\,M_{oc} =  -\frac{L\,d_p}{f_{ob}\,f_{oc}}.
+\end{equation}
+
+#### Exercício
+
+Um microscópio tem uma objetiva com distância focal de 1,2 cm e uma ocular com distância focal de 2,0 cm. As lentes são separadas pela distância de 20,0 cm. (a) Encontre o aumento do microscópio para uma pessoa com distância do ponto próximo igual a 25 cm. (b) Onde o objeto deveria ser colocado se a iamgem final é para ser vista no infinito?
+
+### O telescópio refrator
+
+O telescópio refrator também é formado por uma objetiva e uma ocular. 
+:::{figure} ./figures/lentestelescopio.png
+---
+width: 600px
+name: lentestelescopio
+---
+:::
+Porém, diferentemente do microscópio, no telescópio o objeto está muito distante. A luz chega paralelamente e é formada uma pequena imagem do objeto no plano focal da objetiva. A função da objetiva, neste caso, não é ampliar a imagem, mas formar uma imagem que está próxima o suficiente para ser ampliada pela ocular. Mais uma vez, a imagem da objetiva deve se formar no plano focal da ocular.
+
+O ângulo $\theta_0$ é dado pela razão diâmetro/distância do astro. Para a Lua, $\theta_0 \approx 0,5^\circ$. Pela montagem, vemos que $\theta_0 = -y'/f_{ob}$. Da figura, vemos também que $\theta_{oc} = y'/f_{oc}$. A magnificação do telescópio é, portanto:
+\begin{equation}
+M= \frac{\theta_{oc}}{\theta_{ob}} = -\frac{f_{ob}}{f_{oc}}.
+\end{equation}
+
+#### Exercício
+
+O maior telescópio refrator do mundo está no Yerkes Observatory da Universidade de Chicago. A objetiva do telescópio tem uma distância focal de 19,5 m. A distância focal da ocular é 10,0 cm. Qual é o aumento do telescópio? 
+
+O telescópio mencionado no exercício tem um diâmetro de 1,02 m. Quanto maior a objetiva, maior a quantidade de luz captada e, portanto, mais brilhante será a imagem. 
+
+
+
