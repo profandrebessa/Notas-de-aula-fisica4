@@ -127,7 +127,7 @@ y(x,t) = y_1(x,t) + y_2(x,t) \;=\;0\;,\;\;\; \forall x,t.
 \end{equation} 
 Essa é uma característica marcante dos fenômenos ondulatórios: a superposição
 de duas ondas pode resultar na ausência de ondas! Assim, a superposição de dois sons pode resultar em silêncio e a superposição de
-duas luzes pode resultar em escuridão! Esse fenômeno é denominado {\bf interferência destrutiva} e dizemos que as ondas estão em **oposição de fase**.
+duas luzes pode resultar em escuridão! Esse fenômeno é denominado **interferência destrutiva** e dizemos que as ondas estão em **oposição de fase**.
 
 O caso em que $\delta = \pi$ dá origem a uma interferência destrutiva total. O mesmo se dá quando $\delta = -\pi, \pm 3\pi, \pm 5\pi$, etc, pois em todos esses casos $\cos(\delta/2)$ se anula. 
 :::{note}
@@ -161,7 +161,7 @@ Perceba as ondas planas chegando e as ondas esféricas interferindo, gerando um 
 
 Pela distância da fonte, a onda atige o anteparo com frentes de onda praticamente planas. Pelo Princípio de Huygens, cada fenda fará com que o comportamento da onda seja equivalente à sobreposição (interferência) de muitas fontes pontuais diminutas, distribuidas ao longo da fenda. Como a frente de onda que atinge as fendas é tipo onda plana, todas as fontes diminutas nas duas fendas estarão em fase. A diferença de fase que se observará na sequência será devida à diferença de caminho.
 
-Vamos considerar o efeito da interferência de duas fontes diminutas localizadas em um mesmo perpendicular às fendas. Qual será a fase da onda em um ponto de altura $y$ (em relação à altura do ponto médio entre as fendas)? Pela figura, vemos que a diferença de caminho é $d\sin\theta$, com $\tan \theta = y/L$. 
+Vamos considerar o efeito da interferência de duas fontes diminutas localizadas em um mesmo plano perpendicular às fendas. Qual será a fase da onda em um ponto de altura $y$ (em relação à altura do ponto médio entre as fendas)? Pela figura, vemos que a diferença de caminho é $d\sin\theta$, com $\tan \theta = y/L$. 
 :::{figure} ./figures/interferenciaduplafendayoung2.png
 ---
 width: 600px
@@ -228,13 +228,15 @@ Agora, observe que $n_0\overline{AC'} = n_0\,L\sin \theta_1$ e $n\overline{A'C} 
 ([2]-[1])_{reflexão}\;=\;2 n d \cos\theta_2 \;-\;\frac{\lambda_0}{2}. 
 \end{equation}
 
-Por simetria, podemos escrever diretamente a diferença de caminho para dois raios transmitidos consecutivos:
+Por simetria, podemos escrever diretamente a diferença de caminho entre os raios transmitidos $2'$ e $1'$:
 \begin{equation}
-([2]-[1])_{transmissão}\;=\;2 n d \cos\theta_2\,. 
+([2']-[1'])_{transmissão}\;=\;2 n d \cos\theta_2\,. 
 \end{equation}
 Como não reflexão do ar para o meio mais refringente, não tem a diferença de fase adicional de meio comprimento de onda.
 
-Portanto, obtemos:
+Observe que os raios refletidos $3,4,\ldots$ têm o mesmo caminho óptico do raio $2$. A inteferência construtiva de $2,3,4,\ldots$ interfere com o raio $1$, que tem mais intensidade. Argumentos análogos valem para a análise dos raios transmitidos. O cálculo completo, que leva em conta a refletividade e a transmissividade pode ser feito.
+
+Finalmente, observam-se as seguintes condições:
 \begin{equation*}
 2 n d \cos\theta_2 = m\,\lambda_0\;\;\;\;(m=0, 1, 2, \ldots)\;\;\Rightarrow \begin{cases}\hbox{Mínimo de reflexão}\\\hbox{Máximo de transmissão}\end{cases} 
 \end{equation*}
@@ -274,5 +276,12 @@ name: interferencialaminasdelgadasborboleta
 As asas de algumas borboletas têm várias camadas de lâminas que dão a coloração das asas.
 :::
 
-### Interferômetros
+### O princípio dos interferômetros
 
+Na seção anterior, para um dado comprimento de onda, estudamos as espessuras de lâminas que correspondiam a interferência construtiva ou destrutiva. Podemos usar as relações obtidas para, a partir de uma lâmina com espessura $d$ conhecida, medir comprimentos de onda ou diferenças de caminho óptico.
+
+A capacidade de um interferômetro em diferenciar dois comprimentos de onda próximos depende da nítida separação entre duas franjas de interferência consecutivas. Usando interferômetros foi possível caracterizar a estrutura fina e hiperfina do espectro dos elementos químicos.  
+
+### Coerência da radiação
+
+## Padrão de difração por uma fenda
